@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as v;
+
+.work {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        padding-top: 30px;
+
+        display:grid;
+
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+
+        gap: 40px;
+
+        .card {
+
+            position: relative;
+            img:nth-child(1){
+                height: 380px;
+                width: 380px;
+            }
+            img:nth-child(2) {
+                height: 20px;
+                width: 20px;
+            }
+            .card-bottom {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                
+                
+            }
+
+            .bordertext {
+                position: absolute;
+                bottom:0;
+                height: 20px;
+                width: 225px;
+                bottom: 0;
+                background-color: v.$green;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    
+}

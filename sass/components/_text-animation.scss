@@ -52,6 +52,8 @@
     -moz-animation: my-animation-left 8s linear infinite;
     -webkit-animation: my-animation-left 8s linear infinite;
     animation: my-animation-left 8s linear infinite;
+    z-index: -10;
+
 }
 
 .animright {
@@ -59,6 +61,7 @@
     -moz-animation: my-animation-right 8s linear infinite;
     -webkit-animation: my-animation-right 8s linear infinite ;
     animation: my-animation-right 8s linear infinite ;
+    z-index: -10;
 }
 
 @keyframes textclip {
